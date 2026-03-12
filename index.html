@@ -360,6 +360,8 @@
         
         function spin() {
             if (isSpinning) return;
+
+            window.location.hash = "spin";
             
             isSpinning = true;
             spinBtn.disabled = true;
@@ -412,6 +414,13 @@
             if (e.code === 'Space' && !isSpinning) {
                 e.preventDefault();
                 spin();
+            }
+        });
+
+        // Allow linking directly to a spin via URL
+        window.addEventListener("load", () => {
+            if (window.location.hash === "#spin") {
+                setTimeout(spin, 500);
             }
         });
     </script>
