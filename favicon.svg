@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Handle -->
+  <rect x="28" y="6" width="8" height="10" rx="2" fill="#d4af37"/>
+
+  <!-- Body -->
+  <rect x="16" y="16" width="32" height="30" rx="4" fill="#d4af37"/>
+
+  <!-- Dreidel tip -->
+  <polygon points="22,46 42,46 32,60" fill="#996515"/>
+
+  <!-- Letter -->
+  <text 
+    x="32" 
+    y="36" 
+    text-anchor="middle" 
+    font-size="20" 
+    font-weight="700"
+    fill="#0c1445"
+    font-family="system-ui, Arial, sans-serif">
+    P
+  </text>
+</svg>
